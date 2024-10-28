@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Menu, X, Mail, ExternalLink, Code2 } from "lucide-react";
-import Image1 from '../assets/1.png';
+import Image1 from "../assets/1.png";
 
 // Add these imports for email functionality
 import emailjs from "@emailjs/browser";
@@ -22,7 +22,8 @@ const projectsData = [
     {
         id: 1,
         title: "Movie Recommendation System",
-        description: "A movie recommendation system using content-based filtering algorithm.",
+        description:
+            "A movie recommendation system using content-based filtering algorithm.",
         thumbnail: Image1, // Replace with your image path
         tags: ["Streamlit", "Python", "Notebook"],
         link: "https://moviez-recommend.streamlit.app/",
@@ -94,7 +95,11 @@ const Portfolio = () => {
     });
 
     useEffect(() => {
-        console.log(process.env.REACT_APP_SERVICE_ID_EMAILJS, process.env.REACT_APP_TEMPLATE_ID_EMAILJS, process.env.REACT_APP_PUBLIC_KEY_EMAILJS)
+        console.log(
+            process.env.REACT_APP_SERVICE_ID_EMAILJS,
+            process.env.REACT_APP_TEMPLATE_ID_EMAILJS,
+            process.env.REACT_APP_PUBLIC_KEY_EMAILJS
+        );
     }, []);
 
     const handleSubmit = async (e) => {
@@ -108,7 +113,7 @@ const Portfolio = () => {
                 process.env.REACT_APP_SERVICE_ID_EMAILJS, // Replace with your EmailJS service ID
                 process.env.REACT_APP_TEMPLATE_ID_EMAILJS, // Replace with your EmailJS template ID
                 form,
-                process.env.REACT_APP_PUBLIC_KEY_EMAILJS  // Replace with your EmailJS public key
+                process.env.REACT_APP_PUBLIC_KEY_EMAILJS // Replace with your EmailJS public key
             );
 
             setFormStatus({
@@ -217,8 +222,8 @@ const Portfolio = () => {
                             Hi, I'm Sandesh
                         </h1>
                         <p className="mt-3 max-w-md mx-auto text-base text-gray-400 sm:text-lg md:mt-5 md:text-xl">
-                            Full Stack Developer passionate about creating
-                            beautiful and functional web applications
+                            Programmer and Full Stack Developer passionate about
+                            creating beautiful and functional web applications
                         </p>
 
                         {/* Enhanced Social Links Section */}
@@ -310,7 +315,7 @@ const Portfolio = () => {
                                             rel="noopener noreferrer"
                                             className="inline-flex items-center text-gray-400 hover:text-gray-300"
                                         >
-                                            <GitHubIcon /> 
+                                            <GitHubIcon />
                                         </a>
                                     </div>
                                 </div>
