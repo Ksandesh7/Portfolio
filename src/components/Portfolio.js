@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Menu, X, Mail, ExternalLink, Code2 } from "lucide-react";
 import Image1 from "../assets/1.png";
+import Image2 from "../assets/2.png";
+import Image3 from "../assets/3.png";
 
 // Add these imports for email functionality
 import emailjs from "@emailjs/browser";
@@ -30,26 +32,26 @@ const projectsData = [
         githubLink: "https://github.com/Ksandesh7/movie_recommendation",
         color: "from-purple-500 to-pink-500",
     },
-    // {
-    //     id: 2,
-    //     title: "Social Media App",
-    //     description: "Real-time social media application with chat",
-    //     thumbnail: "/api/placeholder/400/250", // Replace with your image path
-    //     tags: ["React", "Firebase", "Tailwind"],
-    //     link: "https://project2.com",
-    //     githubLink: "https://github.com/yourusername/project2",
-    //     color: "from-cyan-500 to-blue-500",
-    // },
-    // {
-    //     id: 3,
-    //     title: "AI Image Generator",
-    //     description: "AI-powered image generation tool",
-    //     thumbnail: "/api/placeholder/400/250", // Replace with your image path
-    //     tags: ["Next.js", "OpenAI", "MongoDB"],
-    //     link: "https://project3.com",
-    //     githubLink: "https://github.com/yourusername/project3",
-    //     color: "from-green-500 to-teal-500",
-    // },
+    {
+        id: 2,
+        title: "Guess the Number Game",
+        description: "Simple Javascript web application to guess the number.",
+        thumbnail: Image2, // Replace with your image path
+        tags: ["JavaScript", "HTML", "Tailwind"],
+        link: "https://guess-the-number-game-bay.vercel.app/",
+        githubLink: "https://github.com/Ksandesh7/guess-the-number-game",
+        color: "from-cyan-500 to-blue-500",
+    },
+    {
+        id: 3,
+        title: "Calculator App",
+        description: "A simple calculator web application for instant use.",
+        thumbnail: Image3, // Replace with your image path
+        tags: ["JavaScript", "HTML", "Tailwind"],
+        link: "https://calculator-17no9kicd-sandeshs-projects-a672a3ee.vercel.app/",
+        githubLink: "https://github.com/Ksandesh7/Calculator",
+        color: "from-green-500 to-teal-500",
+    },
 ];
 
 // Social links data - easy to update
